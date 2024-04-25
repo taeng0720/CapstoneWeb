@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CapstoneWeb.iml" filepath="$PROJECT_DIR$/.idea/CapstoneWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taeng.main.iml" filepath="$PROJECT_DIR$/.idea/modules/taeng.main.iml" />
     </modules>
   </component>
 </project>
