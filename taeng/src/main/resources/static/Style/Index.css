@@ -4,6 +4,18 @@
 body {
     margin: 0; /* body의 기본 margin을 없애서 양쪽 여백을 없앰 */
 }
+.MainTitle{
+    font-size:40px;
+    font-weight: bold;
+}
+.SubTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.title{
+    text-align: center;
+}
 
 /* 네비게이션 바 스타일 */
 nav {
@@ -45,7 +57,7 @@ nav {
     color: #fff6c2;
 }
 .content{
-    margin-top: 70px;
+    margin-top: 200px;
 }
 .title{
     
@@ -58,6 +70,7 @@ nav {
     z-index: 5;
     text-align: center;
     margin-top: 100px;
+    margin-left: 40px;
 }
 .logo h2{
 }
@@ -77,8 +90,8 @@ nav {
 }
 canvas {
     margin-left: 100px;
-    margin-top: -200px;
-    width: 100%; /* 화면 가로 길이의 50%로 설정 */
+    margin-top: -300px;
+    width: 1980px;
     z-index: -1;
 }
 
