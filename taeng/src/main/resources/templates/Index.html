@@ -1,118 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style/Index.css">
-    <title>Document</title>
+  <title>Webleb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+<link rel="stylesheet" href="/static/Style/Index.css">
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="home">
-                <button onclick="location.href='Index.html'">Home</button>
-            </div>
-            <div class="forums">
-                <button onclick="location.href='forums.html'">Forums</button>
-            </div>
-            <div class="FAQ">
-                <button onclick="location.href='FAQ.html'">FAQ</button>
-            </div>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="logo">
-            <p class="MainTitle">~경운기로 시작해봅니다~</p>
-            <p class="SubTitle">열심히 준비하는 의성군 축제</p>
-        </div>
-        <div id="model-container">
-            <!-- 수정: 3D 모델 -->
-            <canvas id="cultivator">
-            </canvas>
-        </div>
-        <div class="title">
-            <h1>~경운기로 시작해봅니다~</h1>
-            <h3>열심히 준비하는 의성군 축제</h3>
-        </div>
-        
-        <div class="image-slider">
-            <!-- 수정: 이미지 슬라이더 -->
-            <img src="Asset/test.png" alt="Game Play Image 1">
-            <img src="Asset/test.png" alt="Game Play Image 2">
-            <!-- 필요한 만큼 이미지 추가 -->
-        </div>
-    </div>
+	<div class="section">
+		<div class="container">
+			<div class="center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="select"><span>Home </span><span>FAQ</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
 
-    <script type="module">
-        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js';
-        import { GLTFLoader } from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/loaders/GLTFLoader.js';
 
-        function main() {
-          const canvas = document.querySelector('#cultivator');
-          const renderer = new THREE.WebGLRenderer({
-            canvas,
-            alpha: true,
-        });
-          renderer.setClearColor(0x000000, 0); // 배경색을 투명한 검은색으로 설정
-          renderer.autoClearColor = false;
+								<div class="card-front">
+									<div class="center-wrap">
 
-          const fov = 75;
-          const aspect = 2;  // the canvas default
-          const near = 0.1;
-          const far = 100;
-          const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-          camera.position.z = 10; //카메라 위치 조정
+			      			</div>
+			      		</div>
 
-          const scene = new THREE.Scene();
 
-          {
-            const color = 0xFFFFFF;
-            const intensity = 1;
-            const light = new THREE.DirectionalLight(color, intensity);
-            light.position.set(-1, 2, 4);
-            scene.add(light);
-          }
+								<div class="card-back">
 
-          const loader = new GLTFLoader();
-          // 정적 파일의 경로를 절대 경로로 지정
-          loader.load('/Asset/cultivator.glb', (gltf) => {
-            const model = gltf.scene;
-            scene.add(model);
-
-            // 모델이 회전하는 부분
-            function render(time) {
-              model.rotation.y = 1.6; // 모델이 오른쪽으로 회전하도록 변경
-              model.rotation.x = 0;
-
-              if (resizeRendererToDisplaySize(renderer)) {
-                const canvas = renderer.domElement;
-                camera.aspect = canvas.clientWidth / canvas.clientHeight;
-                camera.updateProjectionMatrix();
-              }
-
-              renderer.render(scene, camera);
-
-              requestAnimationFrame(render);
-            }
-
-            requestAnimationFrame(render);
-          });
-
-          function resizeRendererToDisplaySize(renderer) {
-            const canvas = renderer.domElement;
-            const width = canvas.clientWidth;
-            const height = canvas.clientHeight;
-            const needResize = canvas.width !== width || canvas.height !== height;
-            if (needResize) {
-              renderer.setSize(width, height, false);
-              camera.aspect = width / height;
-              camera.updateProjectionMatrix();
-            }
-            return needResize;
-          }
-        }
-
-        main();
-    </script>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
 </body>
 </html>
