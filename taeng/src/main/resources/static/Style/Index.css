@@ -20,18 +20,6 @@ a:hover {
     border-radius: 100%;
     border-right: 2px solid #ffeba7;
 }
-.right_circle{
-    width: 250px;
-    height: 170px;
-    margin: -200px auto 100px 830px;
-    border-bottom: 2px solid #ffeba7;
-    border-right: 2px solid #ffeba7;
-    border-radius: 45%;
-    justify-content: right;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 
 .link {
     color: #ffeba7;
