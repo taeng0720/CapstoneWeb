@@ -14,10 +14,11 @@ a:hover {
 
 .circle {
     width: 250px;
-    height: 100px;
-    margin: -70px auto auto auto;
+    height: 150px;
+    margin: -130px auto auto auto;
     border-bottom: 2px solid #ffeba7;
     border-radius: 100%;
+    border-right: 2px solid #ffeba7;
 }
 
 
