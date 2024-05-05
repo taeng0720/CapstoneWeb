@@ -11,6 +11,9 @@ body {
 a:hover {
     text-decoration: none;
 }
+table{
+    border: 1px solid #ffeba7;
+}
 
 .circle {
     width: 250px;
