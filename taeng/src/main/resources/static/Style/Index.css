@@ -183,11 +183,17 @@ section {
     background-color: #000000;
     padding-left: 10px;
     white-space: pre-line;
+    &:hover{
+        .section_content{
+            display: block;
+        }
+    }
 }
 
 article section:hover {
     height: 200px;
     background-color: #2b2e38;
+    
 }
 
 article:hover>section:not(:hover) {
@@ -204,8 +210,10 @@ article:hover>section:not(:hover) {
     }
 
     .section_sub_title {
-        margin-top: 5px;
+        margin-top: -5px;
+        
     }
+    
 }
 
 .section_title,
@@ -213,7 +221,11 @@ article:hover>section:not(:hover) {
     transition-duration: 0.35s;
     transition-timing-function: ease-in-out;
 }
-
+.section_sub_title{
+    margin-top: 2px;
+    font-size: 15px;
+    color: #ddcc95;
+}
 aside {
     border: 1px solid #ffeba7;
     border-radius: 10px;
@@ -355,4 +367,16 @@ aside {
     padding-top: 10px;
     font-size: 30px;
     font-weight: 600;
+}
+.section_content{
+    display: none;
+}
+.section_first{
+
+}
+.section_second{
+
+}
+.section_third{
+    
 }
