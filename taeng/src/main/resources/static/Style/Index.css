@@ -184,9 +184,13 @@ section {
     padding-left: 10px;
     white-space: pre-line;
     &:hover{
-        .section_content{
-            display: block;
+        .section_first, 
+        .section_second,
+        .section_third{
+            opacity: 1;
+            transition: 0.3s;
         }
+        
     }
 }
 
@@ -368,15 +372,20 @@ aside {
     font-size: 30px;
     font-weight: 600;
 }
-.section_content{
-    display: none;
-}
 .section_first{
-
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    opacity: 0;
 }
 .section_second{
-
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 .section_third{
-    
+    transition: 0.3s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+.section_first .section_second .section_third{
+    opacity: 0;
 }
