@@ -184,18 +184,24 @@ section {
     padding-left: 10px;
     white-space: pre-line;
     &:hover{
-        .section_first, 
-        .section_second,
+        .section_first{
+            opacity: 1;
+            transition-duration:0.3s;
+        }
+        .section_second{
+            opacity: 1;
+            transition-duration:0.6s;
+        }
         .section_third{
             opacity: 1;
-            transition: 0.3s;
+            transition-duration:1s;
         }
         
     }
 }
 
 article section:hover {
-    height: 200px;
+    height: 225px;
     background-color: #2b2e38;
     
 }
@@ -373,19 +379,21 @@ aside {
     font-weight: 600;
 }
 .section_first{
-    transition-duration: 1s;
+    transition-duration: 0.15s;
     transition-timing-function: ease-in;
     opacity: 0;
 }
 .section_second{
-    transition-duration: 2s;
+    transition-duration: 0.1s;
     transition-timing-function: ease-in;
+    opacity: 0;
 }
 .section_third{
-    transition: 0.3s;
-    transition-duration: 3s;
+    transition-duration: 0.05s;
     transition-timing-function: ease-in;
-}
-.section_first .section_second .section_third{
     opacity: 0;
+}
+.section_content p{
+    height: 5px;
+    padding-top: -10px;
 }
