@@ -178,7 +178,7 @@ section {
     width: 55%;
     float: left;
     border-radius: 20px;
-    transition-duration: 0.35s;
+    transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
     background-color: #000000;
     padding-left: 10px;
@@ -186,15 +186,17 @@ section {
     &:hover{
         .section_first{
             opacity: 1;
-            transition-duration:0.3s;
+            transition-duration:0.4s;
         }
         .section_second{
             opacity: 1;
-            transition-duration:0.6s;
+            transition-duration:1s;
+            transform: translateY(0px);
         }
         .section_third{
             opacity: 1;
-            transition-duration:1s;
+            transition-duration:1.2s;
+            transform: translateY(0px);
         }
         
     }
@@ -203,7 +205,7 @@ section {
 article section:hover {
     height: 225px;
     background-color: #2b2e38;
-    
+    transition-duration: 0.7s;
 }
 
 article:hover>section:not(:hover) {
@@ -379,19 +381,21 @@ aside {
     font-weight: 600;
 }
 .section_first{
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    transition-timing-function:ease;
     opacity: 0;
 }
 .section_second{
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
     opacity: 0;
+    transform: translateY(-70px);
 }
 .section_third{
-    transition-duration: 0.05s;
-    transition-timing-function: ease-in;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
     opacity: 0;
+    transform: translateY(-160px);
 }
 .section_content p{
     height: 5px;
