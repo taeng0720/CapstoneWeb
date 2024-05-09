@@ -187,16 +187,19 @@ section {
         .section_first{
             opacity: 1;
             transition-duration:0.4s;
+            transition-timing-function: ease-in;
         }
         .section_second{
             opacity: 1;
             transition-duration:1s;
             transform: translateY(0px);
+            transition-timing-function: ease-in;
         }
         .section_third{
             opacity: 1;
             transition-duration:1.2s;
             transform: translateY(0px);
+            transition-timing-function: ease-in;
         }
         
     }
