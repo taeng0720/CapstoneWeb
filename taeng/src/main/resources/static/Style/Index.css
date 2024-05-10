@@ -403,4 +403,10 @@ aside {
 .section_content p{
     height: 5px;
     padding-top: -10px;
+    font-weight: 200;
+}
+.section_content{
+    display: grid;
+    position:fixed;
+    margin-top: 50px;
 }
