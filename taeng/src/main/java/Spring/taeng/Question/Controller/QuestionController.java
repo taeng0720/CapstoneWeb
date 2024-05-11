@@ -2,6 +2,7 @@ package Spring.taeng.Question.Controller;
 
 import Spring.taeng.Question.Entity.Question;
 import Spring.taeng.Question.Repository.QuestionRepository;
+import Spring.taeng.Question.Service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
@@ -13,11 +14,11 @@ import java.util.List;
 @Controller
 public class QuestionController {
 
-    private final QuestionRepository questionRepository;
+    private final QuestionService questionService;
 
     @GetMapping("/question/list")
     public String list(Model model){
-        List<Question> questionList = this.questionRepository.findAll();
+        List<Question> questionList = this.questionService.getList();
         model.addAttribute("questionList", questionList);
         return "forums";
     }
