@@ -245,7 +245,7 @@ article:hover>section:not(:hover) {
 }
 .section_title{
     border: 1px solid black;
-    width: 80%;
+    width: 90%;
     height: 60px;
     padding-left: 10px;
 }
@@ -406,4 +406,14 @@ aside {
     display: grid;
     position:fixed;
     margin-top: 50px;
+}
+
+/* 카드 뒷면 */
+.notice{
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 12.5px;
+}
+.notice p{
+    margin-top: -10px;
 }
