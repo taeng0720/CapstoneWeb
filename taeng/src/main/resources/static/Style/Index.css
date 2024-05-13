@@ -217,6 +217,9 @@ article:hover>section:not(:hover) {
     border: 1px solid#000000;
     color: #9c9069;
     filter: blur(1px);
+    .section_title{
+        height: 50px;
+    }
 
     .section_title {
         margin-top: 5px;
@@ -239,6 +242,12 @@ article:hover>section:not(:hover) {
     margin-top: 2px;
     font-size: 15px;
     color: #3f3f3f;
+}
+.section_title{
+    border: 1px solid black;
+    width: 80%;
+    height: 60px;
+    padding-left: 10px;
 }
 aside {
     border: 1px solid #000000;
@@ -368,26 +377,30 @@ aside {
     font-weight: 600;
 }
 .section_first{
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function:ease;
     opacity: 0;
+    margin-left: 20px;
 }
 .section_second{
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     transition-timing-function: ease;
     opacity: 0;
     transform: translateY(-70px);
+    margin-left: 20px;
 }
 .section_third{
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
     transition-timing-function: ease;
     opacity: 0;
-    transform: translateY(-160px);
+    transform: translateY(-120px);
+    margin-left: 20px;
 }
 .section_content p{
     height: 5px;
     padding-top: -10px;
     font-weight: 200;
+    
 }
 .section_content{
     display: grid;
