@@ -184,18 +184,18 @@ section {
     &:hover{
         .section_first{
             opacity: 1;
-            transition-duration:0.4s;
+            transition-duration:0.2s;
             transition-timing-function: ease-in;
         }
         .section_second{
             opacity: 1;
-            transition-duration:1s;
+            transition-duration:0.7s;
             transform: translateY(0px);
             transition-timing-function: ease-in;
         }
         .section_third{
             opacity: 1;
-            transition-duration:1.2s;
+            transition-duration:1s;
             transform: translateY(0px);
             transition-timing-function: ease-in;
         }
