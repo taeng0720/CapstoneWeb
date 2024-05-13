@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>C_Forums</title>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
-  <link rel="stylesheet" href="/Style/forums.css">
+  <link rel="stylesheet" href="/Style/qeustion_detail.css">
 </head>
 
 <body>
@@ -28,20 +28,8 @@
             </nav>
             <div class="center-content">
               <article>
-                <table>
-                  <thead>
-                  <tr>
-                    <th>제목</th>
-                    <th>작성날짜</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr th:each="question : ${questionList}">
-                    <td th:text="${question.subject}"></td>
-                    <td th:text="${question.createDate}"></td>
-                  </tr>
-                  </tbody>
-                </table>
+                <h1 class="MainTitle" th:text="${question.subject}"></h1>
+                <div class="SubTitle" th:text="${question.content}"></div>
               </article>
             </div>
           </div>
