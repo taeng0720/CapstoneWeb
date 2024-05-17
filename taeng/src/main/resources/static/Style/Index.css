@@ -5,7 +5,7 @@ body {
     font-weight: 300;
     line-height: 1.7;
     color: #000000;
-    background-color: #b8b8b8;
+    background-color: #d7d7d7;
 }
 
 a:hover {
@@ -178,7 +178,7 @@ section {
     float: left;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
-    background-color: #c7c7c7;
+    background-color: #dedede;
     padding-left: 10px;
     white-space: pre-line;
     &:hover{
@@ -189,13 +189,13 @@ section {
         }
         .section_second{
             opacity: 1;
-            transition-duration:0.7s;
+            transition-duration:0.5s;
             transform: translateY(0px);
             transition-timing-function: ease-in;
         }
         .section_third{
             opacity: 1;
-            transition-duration:1s;
+            transition-duration:0.7s;
             transform: translateY(0px);
             transition-timing-function: ease-in;
         }
@@ -211,7 +211,7 @@ article section:hover {
 
 article:hover>section:not(:hover) {
     height: 20px;
-    background-color: #929292;
+    background-color: #cecece;
     padding-bottom: 50px;
     padding-left: 10px;
     border: 1px solid#000000;
@@ -415,5 +415,25 @@ aside {
     margin-left: 12.5px;
 }
 .notice p{
-    margin-top: -10px;
+    margin-top: 50px;
+    display: flex;
+    position: fixed;
+    font-weight: normal;
+}
+.notice_title{
+    margin-top: 1px;
+    display: flex;
+    position: fixed;
+    font-weight: bold;
+}
+
+.notice_logo_sub_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.notice_logo_title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

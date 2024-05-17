@@ -4,38 +4,37 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.7;
-    color: #ffeba7;
-    background-color: #1f2029;
+    color: #000000;
+    background-color: #d7d7d7;
 }
 
 a:hover {
     text-decoration: none;
 }
 table{
-    border: 1px solid #ffeba7;
-    border-radius: 10px;
+    border: 1px solid #000000;
 }
 
 .circle {
     width: 250px;
     height: 150px;
     margin: -45px auto auto auto;
-    border-bottom: 2px solid #ffeba7;
-    border-radius: 100%;
-    border-right: 2px solid #ffeba7;
+    border-bottom: 2px solid #4a4a4a;
+    border-right: 2px solid #4a4a4a;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     text-align: center;
     align-items: center;
+    color: #4a4a4a;
     &:hover{
-        border-bottom: 2px solid #ffdd6f;
-        border-right: 2px solid #ffdd6f;
-        fill: #ffdd6f;
+        border-bottom: 2px solid #000000;
+        border-right: 2px solid #000000;
+        fill: #000000;
         .select{
-            color: #ffdd6f;
+            color: #000000;
         }
         .Move_select{
-            color: #ffdd6f;
+            color: #000000;
         }
     }
 }
@@ -50,9 +49,8 @@ table{
     font-size: 20px;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    border-radius: 50%;
-    border-bottom: 2px solid #ffeba7;
-    border-left: 2px solid #ffeba7;
+    border-bottom: 2px solid #4a4a4a;
+    border-left: 2px solid #4a4a4a;
     width: 90px;
     margin: auto;
 }
@@ -117,17 +115,16 @@ h6 span {
     transition: all 600ms ease-out;
 
 }
-
 .card-front {
     width: 100%;
     height: 1200px;
-    background-color: #2b2e38;
+    background-color: #e8e8e8;
     background-image: url('/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png');
     position: absolute;
-    border-radius: 20px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     margin: 0 1000px 0 auto;
+    border: #000000 solid 1px;
 }
 .content {
     position: absolute;
@@ -146,8 +143,7 @@ h6 span {
     text-align: center;
     margin-top: 60px;
     margin-left: 15px;
-    border-radius: 30px;
-    border: 1px solid #ffeba7;
+    border: 1px solid #000000;
 }
 .logo_title {
     font-size: 30px;
@@ -165,4 +161,40 @@ h6 span {
 article {
     width: 100%;
     margin-left: 2%;
+}
+/* 카드 뒷면 */
+.notice{
+    width: 703px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.notice p{
+    margin-top: 50px;
+    display: flex;
+    position: fixed;
+    font-weight: normal;
+}
+.notice_title{
+    margin-top: 1px;
+    display: flex;
+    position: fixed;
+    font-weight: bold;
+}
+
+.notice_logo_sub_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.notice_logo_title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.detail{
+    width: 703px;
+    height: 150px;
+    margin-top: 20px;
+    border: 1px solid black;
 }

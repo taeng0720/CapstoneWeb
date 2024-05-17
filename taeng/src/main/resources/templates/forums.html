@@ -28,22 +28,14 @@
             </nav>
             <div class="center-content">
               <article>
-                <table>
-                  <thead>
-                  <tr>
-                    <th>제목</th>
-                    <th>작성날짜</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr th:each="question : ${questionList}">
-                    <td>
-                      <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
-                    </td>
-                    <td th:text="${question.createDate}"></td>
-                  </tr>
-                  </tbody>
-                </table>
+                <section class="notice">
+                  <a class="notice_title">제목</a>
+                  <a class="notice_title">작성날짜</a>
+                </section>
+                <section class="detail" th:each="question : ${questionList}">
+                  <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
+                  <a th:text="${question.createDate}"></a>
+                </section>
               </article>
             </div>
           </div>
