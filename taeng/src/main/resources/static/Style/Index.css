@@ -437,16 +437,3 @@ aside {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#macButton, #windowsButton {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #f0f0f0; /* 기본 배경색 */
-    color: #000; /* 기본 글자색 */
-  }
-
-  .selected {
-    background-color: #007bff; /* 선택된 버튼 배경색 */
-    color: #fff; /* 선택된 버튼 글자색 */
-  }
